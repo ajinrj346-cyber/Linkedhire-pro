@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jobs</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+LinkedHire Pro
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="jobs.html">Jobs</a></li>
+<li><a href="companies.html">Companies</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+</ul>
+<button id="themeBtn" onclick="toggleTheme()">
+🌙 Dark Mode
+</button>
+
+</nav>
+
+<section class="job-header">
+
+<h1>Find Your Dream Job</h1>
+
+<div class="filters">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Jobs"
+>
+
+<select id="locationFilter">
+
+<option value="">All Locations</option>
+<option>Bangalore</option>
+<option>Chennai</option>
+<option>Hyderabad</option>
+<option>Pune</option>
+
+</select>
+
+<button onclick="filterJobs()">
+Search
+</button>
+
+</div>
+
+</section>
+
+<section
+class="job-container"
+id="jobContainer">
+</section>
+
+<script src="js/jobs.js"></script>
+<footer class="footer">
+
+<h3>LinkedHire Pro</h3>
+
+<p>
+Connecting Talent with Opportunity
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>

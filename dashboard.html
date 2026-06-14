@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<script>
+
+if(
+localStorage.getItem("isLoggedIn")
+!== "true"
+){
+window.location.href =
+"login.html";
+}
+
+</script>
+
+<nav class="navbar">
+
+<div class="logo">
+LinkedHire Pro
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="jobs.html">Jobs</a></li>
+<li><a href="profile.html">Profile</a></li>
+</ul>
+
+</nav>
+
+<div class="dashboard">
+
+<h1 id="welcomeText">
+Welcome
+</h1>
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+
+<h2 id="appliedCount">
+0
+</h2>
+
+<p>
+Applied Jobs
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2 id="savedCount">
+0
+</h2>
+
+<p>
+Saved Jobs
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2 id="followedCount">
+0
+</h2>
+
+<p>
+Followed Companies
+</p>
+
+</div>
+
+</div>
+
+<div class="recent-section">
+
+<h2>
+Recent Activity
+</h2>
+
+<ul id="activityList">
+</ul>
+
+</div>
+
+<button
+class="logout-btn"
+onclick="logoutUser()">
+
+Logout
+
+</button>
+
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+<li>
+<a href="profile.html">
+Profile
+</a>
+</li>
+<li>
+<a href="saved-jobs.html">
+Saved Jobs
+</a>
+</li>
+
+<li>
+<a href="applications.html">
+Applications
+</a>
+</li>
+<li>
+<a href="admin.html">
+Admin
+</a>
+</li>
+<footer class="footer">
+
+<h3>LinkedHire Pro</h3>
+
+<p>
+Connecting Talent with Opportunity
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>

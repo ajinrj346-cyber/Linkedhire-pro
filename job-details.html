@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Details</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">LinkedHire Pro</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="saved-jobs.html">Saved Jobs</a></li>
+    </ul>
+</nav>
+
+<section class="details-container">
+
+    <div class="job-detail-card">
+
+        <h1>Frontend Developer</h1>
+
+        <p><strong>Company:</strong> Infosys</p>
+
+        <p><strong>Location:</strong> Bangalore</p>
+
+        <p><strong>Salary:</strong> ₹8 LPA</p>
+
+        <h3>Job Description</h3>
+
+        <p>
+            We are looking for a Frontend Developer
+            with strong HTML, CSS, JavaScript and React skills.
+        </p>
+
+        <h3>Required Skills</h3>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Git</li>
+        </ul>
+
+        <button
+        class="apply-btn"
+        onclick="applyCurrentJob()">
+        Apply Now
+        </button>
+
+        <button
+        class="save-btn"
+        onclick="saveCurrentJob()">
+        Save Job
+        </button>
+
+    </div>
+
+</section>
+
+<section class="similar-jobs">
+
+<h2>Similar Jobs</h2>
+
+<div class="job-card">
+<h3>React Developer</h3>
+<p>Accenture</p>
+</div>
+
+<div class="job-card">
+<h3>UI Developer</h3>
+<p>TCS</p>
+</div>
+
+</section>
+
+<script src="js/jobs.js"></script>
+
+</body>
+</html>

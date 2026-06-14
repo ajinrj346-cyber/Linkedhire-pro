@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+Admin Panel
+</div>
+
+<ul>
+<li><a href="dashboard.html">User Dashboard</a></li>
+<li><a href="jobs.html">Jobs</a></li>
+</ul>
+
+</nav>
+
+<div class="dashboard">
+
+<h1>Admin Dashboard</h1>
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+<h2 id="jobCount">0</h2>
+<p>Total Jobs</p>
+</div>
+
+<div class="dashboard-card">
+<h2 id="userCount">0</h2>
+<p>Registered Users</p>
+</div>
+
+</div>
+
+<div class="job-detail-card">
+
+<h2>Add New Job</h2>
+
+<input
+type="text"
+id="jobTitle"
+placeholder="Job Title">
+
+<input
+type="text"
+id="company"
+placeholder="Company Name">
+
+<input
+type="text"
+id="location"
+placeholder="Location">
+
+<button onclick="addJob()">
+Add Job
+</button>
+
+</div>
+
+<h2 style="margin-top:30px;">
+Manage Jobs
+</h2>
+
+<div id="adminJobs">
+</div>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
